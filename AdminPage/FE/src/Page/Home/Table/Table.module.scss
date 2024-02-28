@@ -1,0 +1,126 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+}
+.wrapper {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.4rem;
+}
+th, td {
+    border: 1px solid var(--boder-color); 
+}
+
+.header-tr {
+    background-color: #bdbdbd;
+}
+
+.header-tr th {
+    padding: 5px 10px;
+    text-align: center;
+}
+.body-tr {
+    background-color: #fff;
+}
+
+.body-tr td {
+    padding: 10px;
+    text-align: center;
+}
+
+.lable-checkbox  {
+    cursor: pointer;
+}
+.button-table {
+    margin: 10px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+.button-table button {
+    padding: 6px 18px;
+    border-radius: 5px;
+    background-color: var(--primary);
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.6rem;
+    &:hover {
+        cursor: pointer;
+        filter: brightness(120%);
+    }
+    &:active {
+        filter: brightness(80%);
+    }
+}
+.button-select {
+    padding: 6px ;
+    border-radius: 5px;
+    &:focus {
+        outline: none;
+    }
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.tdDuyet {
+    font-weight: bold;
+}
+.da-duyet {
+    background-color: #98FB98; 
+
+  }
+.khong-duyet {
+    background-color: #FF6347; 
+}
+.noData {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 1.8rem;
+}
+//page
+.page {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.pagination {
+
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    border: 1px solid var(--boder-color);
+    border-right: none;
+}
+.page-item {
+    display: flex;
+    align-items: center;
+    color:  var(--primary);
+    border-right: 1px solid var(--boder-color);
+    &:hover {
+        cursor: pointer;
+    }
+    
+}
+.page-link {
+
+    padding: 0.1rem 1rem;
+    cursor: pointer;
+    &:active {
+        filter: brightness(80%);
+    }
+}
+.page-item.selected .page-link {
+    background-color: #0366d6;
+    border-color: transparent;
+    color: white;
+    min-width: 32px;
+}
+.page-item.disabled a {
+    color: grey;
+}
+
+
+.active {
+    color: white;
+    background-color: var(--primary);
+}

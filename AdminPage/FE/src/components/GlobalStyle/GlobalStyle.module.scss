@@ -1,0 +1,40 @@
+@import 'normalize.css';
+
+
+:root {
+    --primary: rgb(19, 85, 254);
+    --text-color: #282f53;
+    --black: #000;
+    --boder-color: #cbced1;
+    --text-color-small: #74829c;
+    --color-hover: #f3f3f3;
+    --header-height: 75px;
+    --background-button:  rgba(22, 24, 35, 0.06)
+}
+
+html {
+    font-size: 62.5%;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed; 
+}
+button, input, [tabIndex] {
+    outline: none;
+    border: none;
+}
+a[href] {
+    color: var(--text-color);
+    text-decoration: none;
+}
+svg {
+    color: var(--primary);
+}

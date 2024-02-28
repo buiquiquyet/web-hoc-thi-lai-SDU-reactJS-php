@@ -1,0 +1,51 @@
+.wrapper {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;  
+    &:hover {
+        color: #1e2125;
+        background-color: var(--color-hover);
+        cursor: pointer;
+    }
+    
+}
+.content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin: 0 15px 0 0;
+    width: 60%;
+    align-items: flex-start;
+   
+}
+.user {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.name {
+    font-size: 1.6rem;
+    color: var(--text-color);
+}
+.info {
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
+.info {
+    font-size: 1.3rem;
+    color: #76839a;
+    overflow: hidden;
+    
+}
+.textTrangthai {
+    font-weight: bold;
+    font-size: 1.4rem;
+}

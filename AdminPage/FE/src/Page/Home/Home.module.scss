@@ -1,0 +1,148 @@
+.wrapper {
+    padding: 10px 30px;
+    height: 100vh;
+   
+}
+.search {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+//fillter
+.search-row {
+    display: flex;
+    border-bottom: 1px solid var(--boder-color);
+    margin: 10px 0;
+    padding-bottom: 10px;
+}
+.search-fillter {
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.lable-fillter {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.select-fillter {
+    margin-left: 5px;
+    font-size: 1.6rem;
+    padding: 5px 10px;
+    border-radius: 6px;
+    outline: none;
+    &:hover {
+        cursor: pointer;
+    }
+}
+//search
+.search-browes {
+    display: flex;
+    align-items: center;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color:red;
+}
+.search-app {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.search-content {
+    display: flex;
+    border: 1px solid var(--boder-color);
+    border-radius: 6px;
+    
+    align-items: center;
+   
+}
+
+.selected-icon {
+    margin-right: 6px;
+}
+.selected-info {
+    padding: 8px 10px;
+    font-size: 1.4rem;
+    min-width: 120px;
+}
+.selectFrame {
+    border: none;
+    height: 100%;
+    width: 200px;
+}
+
+.selected {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    
+}
+
+.selected-lable {
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    background-color: var(--background-button);
+    height: 100%;
+    padding: 8px 10px;
+}
+.search-icon {
+    color: var(--text-color);
+    margin-right: 5px;
+}
+
+
+.selected-chosse {
+    height: 100%;
+    border: 1px solid var(--boder-color);
+    width: 50px;
+    font-size: 1.6rem;
+    padding: 5px;
+    cursor: pointer;
+    &:focus {
+        border: none;
+        outline: none;
+    }
+}
+.search-option {
+    font-size: 1.6rem;
+    border-radius: none;
+    cursor: pointer;
+   
+}
+.button-search {
+    padding: 8px 12px;
+    font-size: 1.6rem;
+    background-color: var(--primary);
+    color: black;
+    height: 100%;
+    &:hover{
+        cursor: pointer;
+    }
+    &:active {
+        filter: brightness(80%);
+    }
+}
+//filter
+.selected-option {
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0 10px ;
+    font-weight: 600;
+    font-size: 1.4rem;
+    
+}
+//content
+.content {
+    width: 100%;
+    margin-top: 20px;
+    
+}
+.content-lable {
+   width: 100%;
+}
+

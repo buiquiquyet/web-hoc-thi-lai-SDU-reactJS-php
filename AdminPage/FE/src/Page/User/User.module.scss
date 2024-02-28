@@ -1,0 +1,138 @@
+.wrapper {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+.profileUser {
+    width: 35%;
+    display: flex;
+    // justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    // border-right: 1px solid var(--primary);
+    height: 100%;
+    padding-top: 50px;
+}
+.profileIcon {
+    width: 150px;
+    height: auto;
+}
+.profileName {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+}
+.profileId {
+    font-size: 1.4rem;
+    color: var( --text-color-small);
+}
+//content
+.profileContent {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    padding: 50px 70px;
+    flex-direction: column;
+}
+.title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: var(--primary);
+    font-weight: bold;
+}
+.profileInfoName {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.lastName, .firstName {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    input {
+        width: 100%;
+        border: 1px solid var(--boder-color);
+        border-radius: 5px;
+        padding: 7px 10px;
+        caret-color: var(--primary);
+    }
+    label {
+        font-size: 1.1rem;
+    }
+}
+.profileInfo {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+    input {
+        width: 100%;
+        border: 1px solid var(--boder-color);
+        border-radius: 5px;
+        padding: 7px 10px;
+        caret-color: var(--primary);
+    }
+    label {
+        font-size: 1.1rem;
+    }
+}
+.profileButton {
+    margin-top: 10px;
+    button {
+        padding: 6px 25px;
+        background-color: var(--primary);
+        color: white;
+        border-radius: 5px;
+        font-size: 1.6rem;
+        &:hover {
+            filter: brightness(120%);
+            cursor: pointer;
+        }
+        &:active {
+            filter: brightness(80%);
+        }
+    }
+    
+}
+.profileInfoText {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+}
+.profileLable {
+    font-weight: bold;
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    
+}
+//modal
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 99; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    align-items: center;
+    justify-content: center;
+ }
+.overflow {
+    position: absolute;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 100%;
+}
+.madalContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 15px;  
+    z-index: 100;
+  
+}
