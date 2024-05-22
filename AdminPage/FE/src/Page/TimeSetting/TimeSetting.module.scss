@@ -1,0 +1,33 @@
+.wrapper {
+    
+    height: 100vh;
+    display: flex;
+    .app {
+        margin: 60px;
+        width: 600px;
+    }
+    th, td {
+        border: 1px solid var(--boder-color); 
+    }
+    
+    .header-tr {
+        background-color: #bdbdbd;
+    }
+    
+    .header-tr th {
+        padding: 10px 18px;
+        text-align: center;
+    }
+    .body-tr th{
+        padding: 10px 18px;
+        background-color: #fff;
+    }
+    .body-tr td {
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .lable-checkbox  {
+        cursor: pointer;
+    }
+}

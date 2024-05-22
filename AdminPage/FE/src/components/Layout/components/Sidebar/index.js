@@ -34,6 +34,10 @@ function SidebarMain() {
                                 color: "white !important",
                                 fontWeight: "bold !important" }, }; }},}}
                 >
+                    {
+                    (localStorage.getItem('nhom_id') === 'TKGV' || localStorage.getItem('nhom_id') === 'TK') 
+                    ?
+                    <>
                     <SubMenu className={cx('submenu')}  label="Duyệt học lại" style={{fontWeight:'bold'}} >
                         { (localStorage.getItem('nhom_id') === 'TKGV' || localStorage.getItem('nhom_id') === 'GVCN')  && 
                             <MenuItem onClick={() =>  handleChangLink('item1')}  component={<Link to="/duyet/hoclai" />}  icon={<RightIcon/>} className={cx('menuItem', {'selected': backgroundItem === 'item1'})}>
@@ -60,6 +64,12 @@ function SidebarMain() {
                         }
                         
                     </SubMenu>
+                    </>
+                    :
+                    <MenuItem onClick={() =>  handleChangLink('item6')}  component={<Link to="/time" />}  icon={<RightIcon/>} className={cx('menuItem', {'selected': backgroundItem === 'item6'})}>
+                        Thời gian đăng ký
+                    </MenuItem>
+                    }
                     <MenuItem style={{fontWeight:'bold', borderTop: '1px solid #ccc'}} onClick={() => handleChangLink('item2')}  component={<Link to="/filter" />}  icon={<SearchIcon/>} className={cx('menuItem search', {'selected': backgroundItem === 'item2'})}>
                             Tìm kiếm
                     </MenuItem>

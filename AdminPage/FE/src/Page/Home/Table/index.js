@@ -103,7 +103,7 @@ function Table({data, loaihoc, khoa, typeSidebar}) {
             XLSX.utils.book_append_sheet(wb, ws, "Sheet1");
             XLSX.writeFile(wb, "data.xlsx", { bookType: 'xlsx', bookSST: false, type: 'base64', mimeType: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
           } catch (error) {
-            NotificationManager.error('Xuất file excel thành công', 'Lỗi', 2000);
+            NotificationManager.error('Xuất file excel không thành công', 'Lỗi', 2000);
             console.error("Error exporting Excel:", error);
             return
           }
